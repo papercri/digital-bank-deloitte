@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Bank - Tu Banco Digital</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-logo">
+                <i class="fas fa-university"></i>
+                <span>Digital Bank</span>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#beneficios">Beneficios</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+    <section class="hero" id="inicio">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <h1>Abre tu cuenta en minutos</h1>
+                <p>Sin comisiones, 100% online.</p>
+                <button class="cta-button" id="cta-button">¡Quiero mi cuenta!</button>
+            </div>
+            <div class="hero-image">
+                <img src="img/movil.avif" alt="Bank App">
+            </div>
+        </div>
+        
+    </section>
+    <section class="benefits" id="beneficios">
+        <div class="container">
+            <h2>¿Por qué elegir Digital Bank?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-hand-holding-usd"></i>
+                    <h3>Sin Comisiones</h3>
+                    <p>Ahorra en tarifas bancarias.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <i class="fas fa-credit-card"></i>
+                    <h3>Tarjeta Digital</h3>
+                    <p>Compras seguras online.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Transferencias Instantáneas</h3>
+                    <p>Envía dinero al instante.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="testimonios">
+        <div class="container">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>"Digital Bank me ayudó a manejar mejor mi dinero. Es muy fácil de usar y no cobran comisiones."</p>
+                    <div class="testimonial-author">
+                        <img src="img/woman.png" alt="María">
+                        <div>
+                            <h4>María Pérez</h4>
+                            <span>Empresaria</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <p>"Las transferencias son súper rápidas. Puedo enviar dinero a mi familia sin problemas."</p>
+                    <div class="testimonial-author">
+                        <img src="img/man.png" alt="Carlos">
+                        <div>
+                            <h4>Carlos Montana</h4>
+                            <span>Abogado</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contacto">
+        <div class="container">
+            <h2>¿Tienes preguntas?</h2>
+            <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Tu email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Tu mensaje" rows="4"></textarea>
+                </div>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-university"></i>
+                        <span>Digital Bank</span>
+                    </div>
+                    <p>Tu banco digital de confianza.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-phone"></i> +34 93 000 000</p>
+                    <p><i class="fas fa-envelope"></i> info@digitalbank.com</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Digital Bank. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
