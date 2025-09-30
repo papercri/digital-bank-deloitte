@@ -1,5 +1,8 @@
 # Prueba de Desarrollo Frontend: Landing Page
 
+## Demo en Vivo
+[Ver sitio web](https://digital-bank-deloitte.vercel.app/)
+
 ## Descripción
 
 Desarrolla una landing page moderna para un banco ficticio llamado
@@ -60,10 +63,4 @@ landing**.
 -   **Animaciones sutiles** en botones y secciones al hacer scroll.\
 -   Código limpio y bien comentado.
 
-------------------------------------------------------------------------
 
-## Entregable
-
--   Carpeta del proyecto con archivos `index.html`, `styles.css`,
-    `script.js`.\
--   Este archivo README explicando los requisitos y estructura.

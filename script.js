@@ -46,16 +46,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const name = document.getElementById("name").value.trim()
       const email = document.getElementById("email").value.trim()
+      const message = document.getElementById("message").value.trim()
 
       let isValid = true
 
       // Clear previous errors
       document.getElementById("name-error").textContent = ""
       document.getElementById("email-error").textContent = ""
+      document.getElementById("message-error").textContent = ""
 
       // Validate name
       if (name === "") {
         document.getElementById("name-error").textContent = "El nombre es obligatorio"
+        isValid = false
+      } else if (name.length < 3) {
+        document.getElementById("name-error").textContent = "El nombre debe tener al menos 3 letras"
         isValid = false
       }
 
@@ -66,6 +71,15 @@ document.addEventListener("DOMContentLoaded", () => {
         isValid = false
       } else if (!emailRegex.test(email)) {
         document.getElementById("email-error").textContent = "Por favor ingresa un email válido"
+        isValid = false
+      }
+
+      // Validate message
+      if (message === "") {
+        document.getElementById("message-error").textContent = "El mensaje es obligatorio"
+        isValid = false
+      } else if (message.length < 3) {
+        document.getElementById("message-error").textContent = "El mensaje debe tener al menos 3 letras"
         isValid = false
       }
 
