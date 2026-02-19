@@ -1,4 +1,4 @@
-# Prueba de Desarrollo Frontend: Landing Page
+# Desarrollo Frontend: Landing Page
 
 ## Demo en Vivo
 [Ver sitio web](https://digital-bank-deloitte.vercel.app/)
